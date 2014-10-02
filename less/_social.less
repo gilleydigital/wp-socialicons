@@ -1,0 +1,101 @@
+/* Control Panel */
+.social .menu a {
+	font-size: 40px;
+	color: #000;
+	opacity: .6;
+	
+	&:hover {
+		opacity: 1;
+	}
+}
+
+// @icontype: '';
+@icontype: 'circle';
+// @icontype: 'rounded';
+
+/* Wiring */
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot');
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.social .menu a, .social .menu a:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+.social .menu a:before {
+    margin-right: 0.5em;
+}
+
+.social .menu a {
+	overflow: hidden;
+	width: 1.1em;
+	height: 1.1em;
+	float: left;
+	text-decoration: none;
+	
+	&[href*='facebook'] {
+		&:before {
+			content: '@{icontype}facebook';
+		}
+	}
+
+	&[href*='twitter'] {
+		&:before {
+			content: '@{icontype}twitterbird';
+		}
+	}
+
+	&[href*='youtube'] {
+		&:before {
+			content: '@{icontype}youtube';
+		}
+	}
+
+	&[href*='vimeo'] {
+		&:before {
+			content: '@{icontype}vimeo';
+		}
+	}
+	
+	&[href*='pinterest'] {
+		&:before {
+			content: '@{icontype}pinterest';
+		}
+	}
+	
+	&[href*='linkedin'] {
+		&:before {
+			content: '@{icontype}linkedin';
+		}
+	}
+
+	&[href*='instagram'] {
+		&:before {
+			content: '@{icontype}instagram';
+		}
+	}
+
+	&[href*='google'] {
+		&:before {
+			content: '@{icontype}googleplus';
+		}
+	}
+}
